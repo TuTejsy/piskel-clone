@@ -1,0 +1,66 @@
+body {
+  background: #09212E;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+ /* -------------page header-------------------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background: #1D3847;
+}
+
+.page-header .piskel-clone {
+  cursor: default;
+  font-family: Arial;
+  font-size: 30px;
+  color: rgba(110, 144, 163, 1);
+  text-shadow: 0 -1px 0 #000;
+}
+
+.page-header .auth {
+  display: flex;
+  align-items: center;
+}
+
+.page-header .profile-container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 2px;
+  color: black;
+  background-color: gold;
+}
+
+.profile-container .profile-image {
+  width: 25px;
+  height: 25px;
+}
+
+.profile-container .profile-username {
+  margin-right: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+ /* ------------------main-------------------- */
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 200px;
+  max-height: calc(100vh - 58px);
+  margin-right: 10px;
+  margin-left: 10px;
+}

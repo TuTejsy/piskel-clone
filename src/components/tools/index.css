@@ -1,0 +1,159 @@
+/* -----------------tools---------------- */
+
+.tools-container {
+  z-index: 10;
+  height: 100%;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.tools-select, .tool-size {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 94px;
+  padding: 4px;
+}
+
+.tools-select {
+  margin-bottom: 20px;
+}
+
+.tool-size {
+  position: relative;
+}
+
+.tool-size .description {
+  position: absolute;
+  padding: 3px;
+  bottom: 110%;
+  display: none;
+  flex-direction: column;
+  width: calc(100% - 12px);
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+}
+
+.tool-size:hover .description {
+  display: flex;
+}
+
+.tool-size .description-title {
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.tool-size .description-text {
+  font-size: 11px;
+}
+
+.tool-size .size {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1D3847;
+  cursor: pointer;
+}
+
+.tool-size .px4 {
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+.tool-size .px3 {
+  box-shadow: inset 0 0 0 3px #000;
+}
+
+.tool-size .px2 {
+  box-shadow: inset 0 0 0 4px #000;
+}
+
+.tool-size .px1 {
+  box-shadow: inset 0 0 0 5px #000;
+}
+
+.tool-size .active {
+  background-color: rgb(231, 207, 84);
+  border-color: rgb(231, 207, 84);
+}
+
+.tools-select .tool {
+  position: relative;
+  height: 46px;
+  width: 46px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 46px;
+  background-color: #1D3847;
+}
+
+.tools-select .triangle i {
+  transform: scale(1.6);
+}
+
+.tools-select .tool .description {
+  display: none;
+  z-index: 20;
+  position: absolute;
+  padding: 3px 3px;
+  left: 110%;
+  top: 50%;
+  width: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+
+.tools-select .tool:hover .description {
+  display: inline-block;
+}
+
+.tool .description .shortcut {
+  color: gold;
+}
+
+.tool .description .addition {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.tools-select .selected {
+  color: rgb(231, 207, 84);
+  box-shadow: inset 0 0 0 1px rgb(231, 207, 84);
+}
+
+.choose-color {
+  position: relative;
+}
+
+.choose-color .second-color {
+  z-index: 9;
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #5B8AA3;
+  box-shadow: inset 0 0 2px 2px #5B8AA3;
+  border-radius: 3px;
+}
+
+.choose-color .color {
+  z-index: 10;
+  position: absolute;
+  left: 15px;
+  top: -5px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(231, 207, 84);
+  box-shadow: inset 0 0 2px 2px rgb(231, 207, 84);
+  border-radius: 3px;
+}

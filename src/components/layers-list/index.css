@@ -1,0 +1,98 @@
+/* ------------layers container-------------- */
+
+.layers-container {
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 58px);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #A2A2A2;
+}
+
+.canvas-container {
+  position: relative;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat
+}
+
+.canvas-container .layer,
+.canvas-container .hover-layer,
+.canvas-container .additional-layer {
+  z-index: 50;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  vertical-align: bottom;
+  image-rendering: pixelated;
+}
+
+.canvas-container .hover-layer {
+  z-index: 60;
+}
+
+.canvas-container .additional-layer {
+  z-index: 20;
+  opacity: 0.15;
+}
+
+/* ------------layers menu-------------- */
+
+.menu .layers-menu {
+  margin-top: 20px;
+  border: 2px solid #6F62A6;
+  border-radius: 3px;
+  background: #27223A;
+}
+
+.layers-menu .layers-control {
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
+  background: #040721;
+}
+
+.layers-control .title {
+  align-self: center;
+  margin: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.layers-menu .layers-control button {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  background: none;
+  border: 1px solid #5B6199;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.layers-menu .layers-control button:hover {
+  background: #5B6199;
+  border: 1px solid #547F97;
+}
+
+.layers-menu .layers-list {
+  max-height: calc(100vh - 444px);
+  overflow: scroll;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.layers-menu .layers-list .layer {
+  line-height: 25px;
+  padding-left: 25px;
+  border-top: 1px solid #5B6199;
+  cursor: pointer;
+}
+
+.layers-menu .layers-list .active {
+  background: rgb(91, 78, 146);
+}

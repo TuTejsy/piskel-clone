@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="google-signin-client_id"
+    content="564250494397-gkdfl0m3a9o11mksjfcub74hg3tut2lp.apps.googleusercontent.com">
+
+  <link href="fonts/fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="js/CCapture.all.min.js"></script>
+
+  <title>Piskel-clone</title>
+</head>
+
+<body>
+  <div class='container'>
+    <header class="page-header">
+      <span class="piskel-clone">Piskel-clone</span>
+      <div class="auth">
+        <div class="profile-container">
+          <span class="profile-username"></span>
+          <div class="profile-image"></div>
+        </div>
+        <div class="g-signin2" data-width="100" data-height="31" data-onsuccess="onSignIn"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="tools-container">
+      </div>
+
+      <div class="frames-select">
+      </div>
+
+      <div class="layers-container">
+      </div>
+
+      <div class="menu">
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
